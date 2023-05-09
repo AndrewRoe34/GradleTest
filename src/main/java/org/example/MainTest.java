@@ -2,7 +2,7 @@ package org.example;
 
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.fail;
+import static org.testng.AssertJUnit.assertEquals;
 
 class MainTest {
 
@@ -10,11 +10,5 @@ class MainTest {
     void getNum() {
         Main m = new Main();
         assertEquals(2, m.getNum(3));
-    }
-
-    private void assertEquals(int i, int num) {
-        if(i != num) {
-            fail();
-        }
     }
 }
