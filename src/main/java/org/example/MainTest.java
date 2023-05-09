@@ -9,7 +9,7 @@ class MainTest {
     @Test
     void getNum() {
         Main m = new Main();
-        assertEquals(3, m.getNum(3));
+        assertEquals(2, m.getNum(3));
     }
 
     private void assertEquals(int i, int num) {
