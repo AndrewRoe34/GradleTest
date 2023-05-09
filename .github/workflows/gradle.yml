@@ -22,5 +22,5 @@ jobs:
         distribution: 'temurin'
     - name: Set executable permissions for gradlew
       run: chmod +x gradlew
-    - name: Build and test with Gradle
-      run: ./gradlew build test
+    - name: Build, test, and generate code coverage report with Gradle
+      run: ./gradlew build test jacocoTestReport
